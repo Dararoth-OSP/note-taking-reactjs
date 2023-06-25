@@ -47,7 +47,7 @@ const Sidebar = () => {
   return (
     <aside
       className={`${showSidebar ? "w-72 " : "w-[90px] "} ${
-        fixed ? "fixed z-50" : "relative"
+        fixed ? "fixed z-10" : "relative"
       } duration-500 h-screen overflow-hidden`}
     >
       <div

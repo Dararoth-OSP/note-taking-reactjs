@@ -60,7 +60,7 @@ const Header = () => {
   });
 
   return (
-    <div className="flex space-x-4 items-stretch">
+    <div className="flex gap-1 sm:space-x-4 items-stretch">
       {/* <button className="p-3 rounded-xl bg-white">
         <RxHamburgerMenu className="w-7 h-7 text-gray-600" />
       </button>
@@ -70,15 +70,15 @@ const Header = () => {
 
       </button> */}
       <SearchBar />
-      <div className="relative flex rounded-xl items-center gap-3">
+      <div className="relative flex rounded-xl items-center sm:gap-3">
         <div ref={notiRef} className="relative">
-          <button onClick={showNotiHandler} className="p-3 rounded-xl bg-white">
+          <button onClick={showNotiHandler} className="py-3 px-2 rounded-s-xl sm:rounded-xl sm:p-3 bg-white">
             <MdNotificationsNone className="w-7 h-7 text-gray-600" />
           </button>
           {showNoti && <Notification />}
         </div>
         <div ref={userRef} className="relative">
-          <button onClick={showUserHandler} className="p-3 rounded-xl bg-white">
+          <button onClick={showUserHandler} className="py-3 px-2 rounded-e-xl sm:rounded-xl sm:p-3 bg-white">
             <FaRegUserCircle className="w-7 h-7 text-gray-600" />
           </button>
           {showUser && <UserMenu />}
