@@ -16,7 +16,7 @@ const Backdrop = (props) => {
 
 const ModalOverlay = (props) => {
   return (
-    <div className="fixed top-1/3 left-[40%] w-80 bg-white p-4 rounded-md border-2 border-gray-300 z-30 duration-500">
+    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-80 bg-white p-4 rounded-md border-2 border-gray-300 z-30 duration-500">
       <div className="bg-red">{props.children}</div>
     </div>
   );

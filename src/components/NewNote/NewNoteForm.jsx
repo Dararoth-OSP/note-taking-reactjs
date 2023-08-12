@@ -53,8 +53,6 @@ const NewNoteForm = (props) => {
     "Dec",
   ];
 
-
-
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
