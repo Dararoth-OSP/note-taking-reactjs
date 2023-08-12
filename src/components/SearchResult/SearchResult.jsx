@@ -14,8 +14,10 @@ const SearchResult = (props) => {
   }, [search]);
 
   let searchSection = "";
-  let searchArray = props.notes.filter((note) =>
-    note.text.toLowerCase().includes(searchNotes) || note.title.toLowerCase().includes(searchNotes)
+  let searchArray = props.notes.filter(
+    (note) =>
+      note.text.toLowerCase().includes(searchNotes) ||
+      note.title.toLowerCase().includes(searchNotes.toLowerCase())
   );
 
   if (searchArray.length > 0 && search !== "") {
